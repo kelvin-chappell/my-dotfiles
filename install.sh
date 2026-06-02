@@ -10,6 +10,9 @@ mkdir -p "$HOME/.config"
 mkdir -p "$HOME/.config/devenv"
 ln -sn "$HOME/code/my-dotfiles/.config/devenv" "$HOME/.config/devenv"
 
+# Symlink dev container config
+ln -sfn "$HOME/code/my-dotfiles/.config/devenv/devenv.yaml" "$HOME/.config/devenv/devenv.yaml"
+
 # Symlink shell files
 ln -s "$HOME/code/my-dotfiles/shell/.zshrc" "$HOME/.zshrc"
 ln -s "$HOME/code/my-dotfiles/git/.gitconfig" "$HOME/.gitconfig"
