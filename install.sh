@@ -8,14 +8,11 @@ mkdir -p "$HOME/.config"
 
 # Symlink dev container config
 mkdir -p "$HOME/.config/devenv"
-ln -sn "$HOME/code/my-dotfiles/.config/devenv" "$HOME/.config/devenv"
-
-# Symlink dev container config
-ln -sfn "$HOME/code/my-dotfiles/.config/devenv/devenv.yaml" "$HOME/.config/devenv/devenv.yaml"
+ln -sfn "$HOME/code/my-dotfiles/.config/devenv" "$HOME/.config/devenv"
 
 # Symlink shell files
-ln -s "$HOME/code/my-dotfiles/shell/.zshrc" "$HOME/.zshrc"
-ln -s "$HOME/code/my-dotfiles/git/.gitconfig" "$HOME/.gitconfig"
-ln -s "$HOME/code/my-dotfiles/git/.gitignore_global" "$HOME/.gitignore_global"
+ln -sf "$HOME/code/my-dotfiles/shell/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/code/my-dotfiles/git/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$HOME/code/my-dotfiles/git/.gitignore_global" "$HOME/.gitignore_global"
 
 echo "Dotfiles symlinked successfully!"
