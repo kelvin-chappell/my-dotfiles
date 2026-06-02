@@ -1,0 +1,16 @@
+[push]
+	default = simple
+[credential]
+	helper = store
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Kelvin Chappell
+	email = 1722550+kelvin-chappell@users.noreply.github.com
+[init]
+	defaultBranch = main
+[rerere]
+	enabled = true
